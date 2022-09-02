@@ -1,84 +1,55 @@
 
-
-
-
-
-
-
 .heading {
-    text-align: center;
+  text-align: center;
+  /* border-bottom: 2px solid #4d4e53; */
 }
 
 html,
 body {
-    /* min-width: 290px; */
-    color: #4d4e53;
-    background-color: #ffffff;
-    font-family: 'Open Sans', Arial, sans-serif;
-    line-height: 1.5;
-    
-
+  /* min-width: 290px; */
+  color: #4d4e53;
+  background-color: #ffffff;
+  font-family: 'Open Sans', Arial, sans-serif;
+  line-height: 1.5;
+  /* width: 800px; */
 }
+
 body {
-    display: flex;
-    width: 100%;
+  display: flex;
+  width: 100%;
 }
 
 .navu-list {
-    display: flex;
-    /* flex-wrap: wrap; */
-    gap: .5rem;
-    margin: 0;
-    padding: 10px 0;
-    width: 300px;
-    height: 500px;
-    list-style: none;
-    border: 2px solid green;
-    flex-direction: column;
-    position: sticky;
-    overflow: auto;
-   
+  display: flex;
+  /* flex-wrap: wrap; */
+  /* gap: 1rem; */
+  margin: 0;
+  padding: 10px 0;
+  width: 300px;
+  height: 250px;
+  list-style: none;
+  flex-direction: column;
+  position: sticky;
+  overflow: auto;
+  border-top: 2px solid #4d4e53;
+  border-bottom: 2px solid #4d4e53;
 }
 .navu-list > * {
-    border: 1px solid red;
-    flex-shrink: 1;
-    flex-grow: 1;
-    margin: 2.5px auto 2.5px 30px;
-    border-bottom: 2px solid black;
+  flex-shrink: 1;
+  flex-grow: 1;
+  /* margin: 2.5px auto 2.5px 30px; */
+  border-bottom: 2px solid #4d4e53;
+  text-indent: 30px; 
+  /* border: 1px solid red; */
+  font-size: 1.1rem;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  cursor: pointer;
 }
 
-a {
-    text-decoration: none;
-    
-}
-
-a:link, a:visited {
-    color: #4d4e53;
-}
-
-main {
-    padding: 20px;
-    margin: 0;
-}
-/* .navu-list li {
-    border: 1px solid red;
-    flex-shrink: 1;
-    flex-grow: 1;
-
-} */
-
-
-/* ul.navu-list {
-    border: 1px solid black;
-}
-
-li.navlist {
-    list-style: none;
-} */
-/* 
 #navbar {
   position: fixed;
-  min-width: 290px; 
+  min-width: 290px;
   top: 0px;
   left: 0px;
   width: 300px;
@@ -87,14 +58,81 @@ li.navlist {
   border-color: rgba(0, 22, 22, 0.4);
 }
 
-#navbar li {
-    color: #4d4e53;
-    border-top: 1px solid;
-    list-style: none;
-    position: relative;
-    width: 100%;
+main {
+  padding: 20px;
+  margin: 0;
 }
 
+a.nav-link {
+  text-decoration: none;
+}
+
+a.nav-link:link, a.nav-link:visited {
+  color: #212122;
+}
+
+#main-doc {
+ 
+  /* position: absolute; */
+  margin-left: 310px;
+  padding: 20px;
+  /* margin-bottom: 110px; */
+} 
+
+h1 {
+  color: black;
+  font-weight: 2;
+}
+
+code {
+  display: block;
+  text-align: left;
+  /* white-space: pre-line; */
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  background-color: #f7f7f7;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+ /* position: absolute;
+  top: 0px;
+  lrigh
+  background-color: blue;
+  height: 100%;
+  width: 350px; */
+
+
+
+/* .navu-list li {
+    border: 1px solid red;
+    flex-shrink: 1;
+    flex-grow: 1;
+
+} */
+/* 
+html,
+body {
+  min-width: 290px;
+  color: #4d4e53;
+  background-color: #ffffff;
+  font-family: 'Open Sans', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+#navbar {
+  position: fixed;
+  min-width: 290px;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 100%;
+  border-right: solid;
+  border-color: rgba(0, 22, 22, 0.4);
+}
 
 header {
   color: black;
@@ -116,7 +154,13 @@ header {
   overflow-x: hidden;
 }
 
-
+#navbar li {
+  color: #4d4e53;
+  border-top: 1px solid;
+  list-style: none;
+  position: relative;
+  width: 100%;
+}
 
 #navbar a {
   display: block;
@@ -143,23 +187,11 @@ section li {
   margin: 15px 0px 0px 20px;
 }
 
-code {
-  display: block;
-  text-align: left;
-  white-space: pre-line;
-  position: relative;
-  word-break: normal;
-  word-wrap: normal;
-  line-height: 2;
-  background-color: #f7f7f7;
-  padding: 15px;
-  margin: 10px;
-  border-radius: 5px;
-} */
 
-/* @media only screen and (max-width: 815px) {
-  /* For mobile phones:
-   #navbar ul {
+
+@media only screen and (max-width: 815px) {
+  /* For mobile phones: *//*
+  #navbar ul {
     border: 1px solid;
     height: 207px;
   }
@@ -182,9 +214,9 @@ code {
     margin-left: 0px;
     margin-top: 270px;
   }
-} */
+}
 
-/* @media only screen and (max-width: 400px) {
+@media only screen and (max-width: 400px) {
   #main-doc {
     margin-left: -10px;
   }
@@ -197,7 +229,9 @@ code {
     padding-right: 45px;
     min-width: 233px;
   }
-}   */
+} */
+
+
 
  /* code {
     display: block;
